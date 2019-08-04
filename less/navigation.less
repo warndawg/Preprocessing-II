@@ -1,1 +1,34 @@
 // Navigation Styles here
+.nav-container {
+    width: 100%;
+    border-bottom: 2px dashed @navigation-border; 
+}
+nav {
+    .container;
+    margin: 15px auto 0;
+    ul {
+        display: flex;
+        justify-content: flex-end;
+        font-size: 1.6rem;
+        
+        li {          
+            line-height: 1.5;
+            padding: 10px;        
+        }
+    }
+    a {
+        text-decoration: none;
+        font-family: 'Roboto', sans-serif;
+        color: @font-color;
+    }
+    @media (max-width: 500px){
+        display: flex;
+        flex-direction: column;
+        h1 {
+            margin: 15px auto 0;
+        }
+        ul {
+            margin: 15px auto;
+        }
+    }
+}
